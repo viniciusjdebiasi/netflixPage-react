@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 110vh;
+  height: 100vh;
 }
 
 .container-home {
@@ -25,28 +25,43 @@
 }
 
 .Button-home {
-  height: 2.5rem;
   background-color: #e50914;
 }
 
 .container-cont{
-  margin-top: 5rem;
-  max-width: 35rem;
+  margin-top: 6rem;
+  max-width: 37rem;
+  text-align: center;
 }
 
+.title-home{
+  color: #fff;
+  font-weight: 700;
+  font-size: 3.7rem;
+}
 
+.subtitle-page{
+  color: #fff;
+  margin: 2rem 0 2rem 0;
+  font-weight: bold;
+}
+
+.paragraph-page{
+  color: #fff;
+  font-weight: bold;
+}
 
 .enter-email{
-  height: 4rem;
+  height: 5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: azure;
+  justify-content: center;
 }
 
 .input-enterEmail {
   width: 100%;
-  height: 3.5rem;
+  height: 4rem;
   background-color: rgb(18, 17, 17, 0.5);
   border: 0.1rem solid #5e5e5f;
   border-radius: 0.3rem;
@@ -59,12 +74,21 @@
 }
 
 .Button-inizia {
-  width: 7rem;
-  height: 3.5rem;
+  width: 11rem;
+  height: 3.6rem;
   margin-left: 0.5rem;
+  margin-top: 0rem;
   background-color: #e50914;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons{
+  width: 2rem;
+  height: auto;
 }
 
 @media (width < 500px) {

@@ -41,7 +41,7 @@ function LoginPage() {
             </label>
           </div>
 
-          <button type="button" class="btn btn-danger ButtonAccedi-Login">
+          <button type="button" class="btn btn-danger Danger ButtonAccedi-Login">
             Accedi
           </button>
           <p style={{ color: "#b7b7b7" }}>OPPURE</p>

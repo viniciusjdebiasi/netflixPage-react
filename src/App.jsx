@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import Logo from "./assets/logo.png";
+import { CaretRightIcon } from "@radix-ui/react-icons";
 
 function App() {
   return (
@@ -20,25 +21,25 @@ function App() {
           </a>
         </header>
         <div className="container-cont">
-          <h1>Film, serie TV e tanto altro, senza limiti</h1>
-          <h3>A partire da EUR 6.99. Disdici quando vuoi.</h3>
-          <p>
+          <h1 className="title-home">Film, serie TV e tanto altro, senza limiti</h1>
+          <h5 className="subtitle-page">A partire da 6,99 €. Disdici quando vuoi.</h5>
+          <p className="paragraph-page">
             Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o
             riattivare il tuo abbonamento.
           </p>
           <div className="enter-email">
-            <div class="form-floating" style={{ width: "100%" }}>
+            <div class="form-floating" style={{ width: "100%"}}>
               <input
-                type="password"
+                type="email"
                 class="form-control input-enterEmail"
-                id="floatingPassword"
+                id="floatingEmail"
                 placeholder="Email"
               />
-              <label for="floatingPassword" className="label">
+              <label for="floatingEmail" className="label">
                 Indirizzo email
               </label>
             </div>
-            <button class="btn btn-danger Button-inizia">Inizia</button>
+            <button class="btn btn-danger Button-inizia">Inizia <CaretRightIcon className="icons" /></button>
           </div>
         </div>
       </div>
