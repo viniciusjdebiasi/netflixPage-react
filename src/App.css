@@ -1,0 +1,125 @@
+.main {
+  background-image: url('./assets/netflixBackground-e.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 110vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 9rem;
+  height: auto;
+}
+
+.container-login {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 28rem;
+  max-width: 28rem;
+  border-radius: 0.5rem;
+  padding: 4rem 4rem 0.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+}
+
+.title-page {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  width: 20rem;
+  height: 3.5rem;
+  background-color: rgb(18, 17, 17, 0.5);
+  border: 0.1rem solid #5e5e5f;
+  border-radius: 0.3rem;
+}
+
+.form-control:focus {
+  background-color: rgb(18, 17, 17, 0.5);
+  box-shadow: 0px 0px 1px 1px #fff;
+  border: none;
+}
+
+.label {
+  color: #b7b7b7;
+}
+
+.btn {
+  width: 100%;
+  height: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.btn-danger {
+  background-color: #e50914;
+  border: 0.1rem solid #e50914;
+  margin-top: 1rem;
+}
+
+.btn-danger:hover {
+  background-color: #c40811;
+  border: 0.1rem solid #c40811;
+}
+
+.btn-secondary {
+  background-color: rgb(55, 53, 55, 0.6);
+  border: 0.1rem solid rgb(55, 53, 55, 0.6);
+}
+
+.btn-secondary:hover {
+  background-color: rgb(55, 53, 55, 0.4);
+  border: 0.1rem solid rgb(55, 53, 55, 0.4);
+}
+
+.infos-login {
+  width: 100%;
+}
+
+.container-input {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.links-login {
+  text-decoration: none;
+  color: #fff;
+}
+
+.links-login:hover {
+  text-decoration: underline;
+  color: #b7b7b7;
+}
+
+input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: #fff;
+  cursor: pointer;
+  margin-right: 0.7rem;
+  opacity: 0.1;
+}
+
+@media (width < 500px) {
+  .main {
+    background-image: none;
+  }
+
+  .logo {
+    width: 7rem;
+  }
+}
