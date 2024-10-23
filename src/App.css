@@ -28,35 +28,32 @@
   background-color: #e50914;
 }
 
-.container-cont{
+.container-cont {
   margin-top: 6rem;
   max-width: 37rem;
   text-align: center;
 }
 
-.title-home{
+.title-home {
   color: #fff;
   font-weight: 700;
   font-size: 3.7rem;
 }
 
-.subtitle-page{
+.subtitle-page {
   color: #fff;
   margin: 2rem 0 2rem 0;
   font-weight: bold;
 }
 
-.paragraph-page{
+.paragraph-page {
   color: #fff;
   font-weight: bold;
 }
 
-.enter-email{
+.enter-email {
   height: 5rem;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .input-enterEmail {
@@ -86,7 +83,7 @@
   align-items: center;
 }
 
-.icons{
+.icons {
   width: 2rem;
   height: auto;
 }
