@@ -10,10 +10,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 .header-home {
-  width: 80%;
+  width: 83%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,8 +85,13 @@
 }
 
 .icons {
-  width: 2rem;
+  width: 1.5rem;
   height: auto;
+}
+
+.error-message {
+  color: #e50914;
+  margin: 0 0 0.5rem 0;
 }
 
 @media (width < 500px) {
@@ -95,5 +101,20 @@
 
   .logo {
     width: 7rem;
+  }
+
+  .title-home {
+    font-size: 2rem;
+  }
+
+  .enter-email {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Button-inizia {
+    width: 100%;
+    margin: 1rem 0 0 0;
   }
 }

@@ -1,12 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import Logo from "./assets/logo.png";
-import { CaretRightIcon } from "@radix-ui/react-icons";
+import { CaretRightIcon, CrossCircledIcon } from "@radix-ui/react-icons";
 
-function App() {
+export default function App() {
+  const [email, setEmail] = useState("");
+  const [messageCheckEmail, setMessageCheckEmail] = useState("");
+
+  const ReceiveEmail = (email) => {
+    setEmail(email);
+  };
+
+  const CheckEmail = (event) => {
+    event.preventDefault();
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email) {
+      setMessageCheckEmail(
+        <>
+          <h6 className="error-message">
+            <CrossCircledIcon className="icons" /> Inserisci un'e-mail.
+          </h6>
+        </>
+      );
+    } else if (!regex.test(email)) {
+      setMessageCheckEmail(
+        <>
+          <h6 className="error-message">
+            <CrossCircledIcon className="icons" /> Inserisci un'e-mail valida.
+          </h6>
+        </>
+      );
+    } else {
+      setMessageCheckEmail("");
+    }
+  };
+
   return (
     <div className="main-home">
       <div className="container-home">
@@ -35,22 +67,25 @@ function App() {
             <div class="form-floating" style={{ width: "100%" }}>
               <input
                 type="email"
+                name="email"
+                value={email}
+                onChange={(event) => ReceiveEmail(event.target.value)}
                 class="form-control input-enterEmail"
                 id="floatingEmail"
                 placeholder="Email"
+                maxLength={200}
               />
               <label for="floatingEmail" className="label">
                 Indirizzo email
               </label>
             </div>
-            <button class="btn btn-danger Button-inizia">
+            <button onClick={CheckEmail} class="btn btn-danger Button-inizia">
               Inizia <CaretRightIcon className="icons" />
             </button>
           </div>
+          {messageCheckEmail}
         </div>
       </div>
     </div>
   );
 }
-
-export default App;

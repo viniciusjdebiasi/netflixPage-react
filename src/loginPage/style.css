@@ -82,7 +82,7 @@
 .Danger {
     background-color: #e50914;
     border: 0.1rem solid #e50914;
-    margin-top: 1rem;
+    margin-top: 0.6rem;
 }
 
 .btn-danger:hover {
