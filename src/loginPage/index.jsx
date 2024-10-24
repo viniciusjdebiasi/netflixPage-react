@@ -27,7 +27,7 @@ function LoginPage() {
     if (!email) {
       setMessageEmail(
         <>
-          <h6 className="error-message">
+          <h6 className="error-message" style={{marginBottom: '1rem'}}>
             <CrossCircledIcon className="icons" /> Inserisci un'e-mail.
           </h6>
         </>
@@ -35,7 +35,7 @@ function LoginPage() {
     } else if (!regex.test(email)) {
       setMessageEmail(
         <>
-          <h6 className="error-message">
+          <h6 className="error-message" style={{marginBottom: '1rem'}} >
             <CrossCircledIcon className="icons" /> Inserisci un'e-mail valida.
           </h6>
         </>
@@ -47,15 +47,15 @@ function LoginPage() {
     if (!password) {
       setMessagePassword(
         <>
-          <h6 className="error-message" style={{ marginTop: "0.5rem" }}>
+          <h6 className="error-message" style={{marginTop: '1rem'}} >
             <CrossCircledIcon className="icons" /> Inserisci la tua password
           </h6>
         </>
       );
-    } else if (password < 4) {
+    } else if (password.length < 4) {
       setMessagePassword(
         <>
-          <h6 className="error-message" style={{ marginTop: "0.5rem" }}>
+          <h6 className="error-message"  style={{marginTop: '1rem'}} >
             <CrossCircledIcon className="icons" /> La password deve avere una
             lunghezza compresa tra 4 e 60 caratteri.
           </h6>

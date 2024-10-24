@@ -91,7 +91,6 @@
 
 .error-message {
   color: #e50914;
-  margin: 0 0 0.5rem 0;
 }
 
 @media (width < 500px) {
