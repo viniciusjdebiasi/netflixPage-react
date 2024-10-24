@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -44,13 +45,9 @@ export default function App() {
       <div className="container-home">
         <header className="header-home">
           <img src={Logo} alt="Logo della Netflix" className="logo" />
-          <a
-            href="/LoginPage"
-            target="_blank"
-            className="btn btn-danger Button-home"
-          >
+          <Link to="/LoginPage" className="btn btn-danger Button-home">
             Accedi
-          </a>
+          </Link>
         </header>
         <div className="container-cont">
           <h1 className="title-home">
