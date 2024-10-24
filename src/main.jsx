@@ -7,10 +7,12 @@ import LoginPage from "./loginPage/index.jsx";
 import "./index.css";
 
 createRoot(document.getElementById("root")).render(
-  <Router>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/LoginPage" element={<LoginPage />} />
-    </Routes>
-  </Router>
+  <StrictMode>
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/LoginPage" element={<LoginPage />} />
+      </Routes>
+    </Router>
+  </StrictMode>
 );
